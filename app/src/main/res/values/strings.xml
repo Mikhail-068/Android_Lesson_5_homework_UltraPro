@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lesson_1_PRO</string>
+    <string name="fridge">Холодильник</string>
+    <string name="vacuumCleaner">Пылесос</string>
+    <string name="fan">Фен</string>
+    <string name="kettle">Чайник</string>
+    <string name="washingMachine">Стиральная машина</string>
+    <string name="tv">Телевизор</string>
+    <string name="laptop">Ноутбук</string>
+    <string name="getPrice">получить стоимость</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252C54"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/getPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        app:layout_constraintVertical_bias="0.176">
+
+        <RadioButton
+            android:id="@+id/radioButtonFridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fridge"
+            android:textColor="@color/fridge"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv"
+            android:textColor="@color/tv"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fan"
+            android:textColor="@color/fan"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWashingMachine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/washingMachine"
+            android:textColor="@color/washingMachine"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKettle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kettle"
+            android:textColor="@color/kettle"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonLaptop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laptop"
+            android:textColor="@color/laptop"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVacuumCleaner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vacuumCleaner"
+            android:textColor="@color/vacuumCleaner"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/getPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#BD5201"
+        android:text="@string/getPrice"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="377dp"
+        android:layout_height="91dp"
+        android:layout_below="@id/getPrice"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textColor="@color/select"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
